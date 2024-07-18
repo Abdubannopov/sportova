@@ -1,0 +1,113 @@
+// HERO
+.header{
+    &_top{
+
+    }
+    &-main{
+
+    }
+    &-navs{
+        &-search{
+             width: 518px;
+        }
+        &-favorites:hover &-favorites-img{
+                path{
+                    stroke: #0A4ECB;
+                }
+            }
+        &-favorites:active &-favorites-img{
+                path{
+                    stroke: #fff;
+                }
+            }
+        &-basket{
+            &-title{
+                font-size: 13px;
+                line-height: 1.2;
+                letter-spacing: 2%;
+                font-weight: 500;
+                color: #6E7284;
+                margin-bottom: 1px;
+            }
+            &-subtitle{
+                font-size: 11px;
+                line-height: 1.2;
+                letter-spacing: 2%;
+                font-weight: 400;
+                color:#A3A6B2;
+            }
+        }
+    }
+}
+// MAIN
+.main{
+    .hero{
+        &-links{
+            &-item{
+                &:first-child(){
+                    background-image: url('~/assets/images/png/links-item-1.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                }
+                &:nth-child(2){
+                    background-image: url('~/assets/images/png/links-item-2.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    .atletic{
+        .Navigation{
+            position: absolute;
+            top:50%;
+            z-index:10;
+            &:first-child(){
+                left: -20%;
+                position: absolute;
+            }
+
+        }
+    }
+    .wall{
+        &-swiper{
+            &-slide{
+                &:hover .wall-swiper-slide-btn{
+                   opacity: 1;
+                   transition: opacity 0.5s ease;
+
+                }
+                &-btn{
+                    opacity: 0;
+                }
+            }
+            &-img-plus{
+                position: absolute;
+                top: 1px;
+                right: -3px;
+            }
+        }
+        &-price{
+            &-text-wrapper{
+                .wall-price-text-first{
+                    top:-70%;
+                }
+            }
+            &-btn{
+                &-plus{
+                    position: absolute;
+                    top: -1px;
+                    right: -3px;
+                }
+            }
+        }
+        &-navigation{
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+            left: -10%;
+            right: -10%;
+        }
+    }
+}
