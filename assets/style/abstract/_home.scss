@@ -44,17 +44,6 @@
     .hero{
         &-links{
             &-item{
-                &:first-child(){
-                    background-image: url('~/assets/images/png/links-item-1.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-
-                }
-                &:nth-child(2){
-                    background-image: url('~/assets/images/png/links-item-2.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
             }
         }
     }
